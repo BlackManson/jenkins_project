@@ -1,19 +1,19 @@
 pipeline{
     agent {
         docker {
-            image 'python'
+            image 'gcc'
             label 'docker_node'
         }
     }
     stages {
         stage('Build') {
             steps {
-                sh 'echo Python docker init complete'
+                sh 'test gcc'
             }
         }
         stage('Run') {
             steps {
-                sh 'python main.py'
+                sh 'gcc --version'
             }
         }
     }
