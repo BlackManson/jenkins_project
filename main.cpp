@@ -10,7 +10,7 @@ int main() {
     cin >> a >> b >> c;
 
     if(a==0){
-        cout << "To nie jest  funkcja kwadratowa";
+        cout << "It's not a function";
     }
     else{
         delta = (b*b) - (4*a*c);
