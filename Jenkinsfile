@@ -8,12 +8,12 @@ pipeline{
     stages {
         stage('Build') {
             steps {
-                sh 'test gcc'
+                sh 'g++ -o main main.cpp'
             }
         }
         stage('Run') {
             steps {
-                sh 'gcc --version'
+                sh './main'
             }
         }
     }
