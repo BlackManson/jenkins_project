@@ -3,5 +3,5 @@
 using namespace std;
 
 int main() {
-    cout << "Test jenkins again :)";
+    cout << "Test sonar :)";
 }
